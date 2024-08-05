@@ -15,11 +15,10 @@ const Header = ({defaultpos}:any) => {
         lineHeight: 1.25,
         padding: 10,
         margin: 0,
-        position: 'fixed',
         width: '100%',
     }
     var headerPosition = {
-        position: 'fixed',
+        position: 'sticky',
         top: 0,
         left: 0,
         transition: 'top 0.25s ease-out',
@@ -54,11 +53,18 @@ const Header = ({defaultpos}:any) => {
           window.removeEventListener("scroll", handleNavigation);
         };
       }, [handleNavigation]);
+    if (window.scrollY > document.getElementById("header")?.offsetHeight) {
+        scrollDirection ? headerPosition.top = 0:headerPosition.top = -150
+    }
 
-    scrollDirection ? headerPosition.top = 0:headerPosition.top = -150
+    if (window.scrollY < document.getElementById("header")?.offsetHeight) {
+        headerPosition.transition = 'top 0.0s ease-out'
+    } else {
+        headerPosition.transition = 'top 0.25s ease-out'
+    }
 
     return(
-        <header style={headerPosition}>
+        <header style={headerPosition} id="header">
             <div style={headerStyle}>
                 <div>
                     <img src={logo} style={{
