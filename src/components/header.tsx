@@ -1,5 +1,4 @@
 import * as React from 'react'
-import 'animate.css'
 import logo from '../images/wirtualnagazetka.svg'
 
 const Header = () => {
