@@ -15,19 +15,19 @@ const pageStyles = {
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-      <Header/>
-    <div>
-      <img src={fiszki} style={{
-        width: "100%",
-        height: "auto"
-      }}></img>
-    </div>
-    <body style={{
-      height: 1200,
-      width: "auto",
-    }}>
+      <Header defaultpos={true}/>
+      <div>
+        <img src={fiszki} style={{
+          width: "100%",
+          height: "auto"
+        }}></img>
+      </div>
+      <body style={{
+        height: 1200,
+        width: "auto",
+      }}>
 
-    </body>
+      </body>
       <Footer/>
     </main>
   )

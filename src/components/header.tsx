@@ -1,8 +1,7 @@
 import * as React from 'react'
-import 'animate.css'
 import logo from '../images/wirtualnagazetka.svg'
 
-const Header = () => {
+const Header = ({defaultpos}:any) => {
     var headerStyle = {
         color: "white",
         backgroundColor: "#116633",
@@ -10,6 +9,7 @@ const Header = () => {
         textAlign: "center",
         display: "flex",
         alignItems: "center",
+        justifyContent: 'space-between',
         marginTop: 10,
         marginBottom: 0,
         lineHeight: 1.25,
@@ -25,11 +25,17 @@ const Header = () => {
         left: 0,
         transition: 'top 0.15s ease-out'
     }
+    var headerElemStyle = {
+        margin: 10,
+        width: 80,
+        padding: '0px 20px 0px 20px',
+        fontSize: 14
+    }
 
     const [y,
         setY] = React.useState(document.scrollingElement.scrollHeight);
       const [scrollDirection,
-        setScrollDirection] = React.useState(true);
+        setScrollDirection] = React.useState(defaultpos);
     
       const handleNavigation = React.useCallback(() => {
     
@@ -55,11 +61,33 @@ const Header = () => {
     return(
         <main style={headerPosition}>
             <header style={headerStyle}>
-            <div style={{}}>
+            <div>
                 <img src={logo} style={{
                     height: 50,
-                    width: 'auto',
+                    flexGrow: 3
                 }}/>
+            </div>
+            <div style={{
+                display: 'flex',
+                paddingRight: 20,
+                textAlign: 'center'
+            }}>
+                <div>
+                    <p style={headerElemStyle}>
+                        Zamów Wirtualną Gazetkę
+                    </p>
+                </div>
+                <div>
+                    <p style={headerElemStyle}>
+                        Chcę Otrzymać Wycenę
+                    </p>
+                </div>
+                <div>
+                    <p style={headerElemStyle}>
+                        <b>Logowanie</b><br/>
+                        do panelu klienta
+                    </p>
+                </div>
             </div>
             </header>
         </main>
