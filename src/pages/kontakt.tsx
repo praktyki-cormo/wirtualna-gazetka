@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9d41692 (added contact page)
 import * as React from "react"
 import { HeadFC } from "gatsby"
 import Header from "../components/header"
