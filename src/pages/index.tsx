@@ -4,6 +4,7 @@ import "../components/footer"
 import "../styles/global.css"
 import fiszki from "../images/fiszki.png"
 import Footer from "../components/footer"
+import Header from "../components/header"
 
 const pageStyles = {
   padding: 0,
@@ -14,12 +15,13 @@ const pageStyles = {
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-    <header>
+      <Header/>
+    <div>
       <img src={fiszki} style={{
         width: "100%",
         height: "auto"
       }}></img>
-    </header>
+    </div>
     <body style={{
       height: 1200,
       width: "auto",

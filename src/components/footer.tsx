@@ -35,7 +35,7 @@ const Footer = () =>{
                     verticalAlign: "middle",
                     padding: 20,
                     paddingBottom: 0,
-                }}></img> 533 375 909
+                }}/> 533 375 909
             </div>
                 <div style={{
                     fontSize: 32,
