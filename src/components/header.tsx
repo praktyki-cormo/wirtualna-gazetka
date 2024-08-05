@@ -17,17 +17,16 @@ const Header = ({defaultpos}:any) => {
         margin: 0,
         position: 'fixed',
         width: '100%',
-        animation: 'ease-in-out'
     }
     var headerPosition = {
         position: 'fixed',
         top: 0,
         left: 0,
-        transition: 'top 0.15s ease-out'
+        transition: 'top 0.25s ease-out',
     }
     var headerElemStyle = {
         margin: 10,
-        width: 80,
+        maxWidth: 80,
         padding: '0px 20px 0px 20px',
         fontSize: 14
     }
@@ -56,41 +55,41 @@ const Header = ({defaultpos}:any) => {
         };
       }, [handleNavigation]);
 
-    scrollDirection ? headerPosition.top = 0:headerPosition.top = -80
+    scrollDirection ? headerPosition.top = 0:headerPosition.top = -150
 
     return(
-        <main style={headerPosition}>
-            <header style={headerStyle}>
-            <div>
-                <img src={logo} style={{
-                    height: 50,
-                    flexGrow: 3
-                }}/>
+        <header style={headerPosition}>
+            <div style={headerStyle}>
+                <div>
+                    <img src={logo} style={{
+                        height: 50,
+                        flexGrow: 3
+                    }}/>
+                </div>
+                <div style={{
+                    display: 'flex',
+                    paddingRight: 20,
+                    textAlign: 'center'
+                }}>
+                    <div>
+                        <p style={headerElemStyle}>
+                            Zamów Wirtualną Gazetkę
+                        </p>
+                    </div>
+                    <div>
+                        <p style={headerElemStyle}>
+                            Chcę Otrzymać Wycenę
+                        </p>
+                    </div>
+                    <div>
+                        <p style={headerElemStyle}>
+                            <b>Logowanie</b><br/>
+                            do panelu klienta
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div style={{
-                display: 'flex',
-                paddingRight: 20,
-                textAlign: 'center'
-            }}>
-                <div>
-                    <p style={headerElemStyle}>
-                        Zamów Wirtualną Gazetkę
-                    </p>
-                </div>
-                <div>
-                    <p style={headerElemStyle}>
-                        Chcę Otrzymać Wycenę
-                    </p>
-                </div>
-                <div>
-                    <p style={headerElemStyle}>
-                        <b>Logowanie</b><br/>
-                        do panelu klienta
-                    </p>
-                </div>
-            </div>
-            </header>
-        </main>
+        </header>
     )
 }
 

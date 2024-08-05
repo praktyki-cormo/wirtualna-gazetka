@@ -13,7 +13,6 @@ const Footer = () =>{
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            marginTop: 10,
             marginBottom: 0,
             lineHeight: 1.25,
             padding: 20,
