@@ -1,11 +1,12 @@
 import * as React from 'react'
+import {Link} from 'gatsby'
 import logo from '../images/wirtualnagazetka.svg'
+import "./header.css"
 
 const Header = ({defaultpos}:any) => {
     var headerStyle = {
         color: "white",
-        backgroundColor: "#116633",
-        fontFamily: "Georgia, monospace",
+        backgroundColor: "#246036",
         textAlign: "center",
         display: "flex",
         alignItems: "center",
@@ -16,18 +17,30 @@ const Header = ({defaultpos}:any) => {
         padding: 10,
         margin: 0,
         width: '100%',
+        boxShadow: "-2px 2px 10px 2px rgba(0, 0, 0, 0.25)",
+        boxSizing: 'border-box'
     }
     var headerPosition = {
         position: 'sticky',
         top: 0,
         left: 0,
         transition: 'top 0.25s ease-out',
+        zIndex: 40
     }
     var headerElemStyle = {
         margin: 10,
         maxWidth: 80,
         padding: '0px 20px 0px 20px',
-        fontSize: 14
+        fontSize: 14,
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        backgroundColor: 'white',
+        color: 'black',
+        borderRadius: '40px 40px 40px 40px'
+    }
+    var headerElemContainerStyle = {
+        display: 'flex'
     }
 
     const [y,
@@ -77,18 +90,28 @@ const Header = ({defaultpos}:any) => {
                     paddingRight: 20,
                     textAlign: 'center'
                 }}>
+                    <div style={headerElemContainerStyle}>
+                        <Link to='../pages/o-nas.tsx' style={{...headerElemStyle, textDecoration: 'none'}} className='button'>
+                        <p >O nas</p>
+                        </Link>
+                    </div>
+                    <div style={headerElemContainerStyle}>
+                        <Link to='../pages/kontakt.tsx' style={{...headerElemStyle, textDecoration: 'none'}} className='button'>
+                        <p >Kontakt</p>
+                        </Link>
+                    </div>
                     <div>
-                        <p style={headerElemStyle}>
+                        <p style={headerElemStyle} className='button'>
                             Zamów Wirtualną Gazetkę
                         </p>
                     </div>
                     <div>
-                        <p style={headerElemStyle}>
+                        <p style={headerElemStyle} className='button'>
                             Chcę Otrzymać Wycenę
                         </p>
                     </div>
                     <div>
-                        <p style={headerElemStyle}>
+                        <p style={headerElemStyle} className='button'>
                             <b>Logowanie</b><br/>
                             do panelu klienta
                         </p>

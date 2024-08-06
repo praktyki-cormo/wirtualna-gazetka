@@ -1,0 +1,4 @@
+.link:hover{
+    background-color: lightgray!important;
+    transition: background-color 0.25s ease-in-out;
+}

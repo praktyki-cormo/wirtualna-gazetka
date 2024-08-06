@@ -5,10 +5,10 @@ import lightbulbIcon from "../images/ico-lightbulb-dark.svg"
 import swash1 from "../images/swash-1.svg"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import "../styles/global.css"
 
 const mainStyle: React.CSSProperties = {
-	fontFamily: `"filson-pro", sans-serif`,
-	backgroundColor: "#D9D9D9",
+	backgroundColor: "white",
 	color: "#FFF",
 	display: "flex",
 	flexDirection: "column",
