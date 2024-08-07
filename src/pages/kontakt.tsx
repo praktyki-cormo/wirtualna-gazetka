@@ -9,6 +9,7 @@ const mainStyle: React.CSSProperties = {
 	alignItems: "center"
 }
 const headerStyle: React.CSSProperties = {
+	margin: "6vh 0",
 	fontSize: "calc(24px + 1vw)",
 	color: "#314839",
 }
@@ -49,7 +50,8 @@ const horizontalContainerStyle: React.CSSProperties = {
 
 const buttonStyle: React.CSSProperties = {
 	padding: "6px 18px",
-	marginRight: "16px",
+	marginRight: "1vw",
+	marginBottom: "2vh",
 	alignSelf: "end",
 	fontSize: "16px",
 }
@@ -96,7 +98,7 @@ const KontaktPage = () => {
 						<textarea style={{ ...inputStyle, resize: "vertical" }} name="message" id="message" rows={5} placeholder="Wiadomosc" />
 					</div>
 
-					<button style={buttonStyle} type="submit">Wyslij</button>
+					<button style={buttonStyle} type="submit">Wyślij</button>
 					<p style={privacyPolicyStyle}>
 						Wyrażam zgodę na przetwarzanie moich danych osobowych, w celu otrzymywania ofert handlowych drogą elektroniczną od Revers sp. z o.o. z siedzibą w Olsztynie, ul. Trylińskiego 2 na podany adres e-mail. Zgodnie z europejskim rozporządzeniem o ochronie danych osobowych z 27 kwietnia 2016 r. (Dz.Urz. UE L nr 19, str. 1) oraz ustawą z 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną (Dz.U. 2002, nr 144, zm. 1204 ze zm.). Wyrażona zgoda jest dobrowolna, jednak niezbędna do realizacji usługi. Zgodę można wycofać w każdym czasie w sposób określony w polityce prywatności. Wycofanie zgody nie wpływa na zgodność z prawem przetwarzania dokonanego przed jej wycofaniem.
 					</p>

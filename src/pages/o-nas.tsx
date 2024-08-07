@@ -14,10 +14,10 @@ const mainStyle: React.CSSProperties = {
 	justifyContent: "space-between"
 }
 const headerStyle: React.CSSProperties = {
-	paddingLeft: "4vw",
+	textAlign: "center",
 	fontSize: "calc(24px + 1vw)",
 	color: "#314839",
-	margin: "5vh 0 10vh",
+	margin: "6vh 0",
 }
 const sectionStyle: React.CSSProperties = {
 	display: "flex",
