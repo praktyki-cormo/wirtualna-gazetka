@@ -91,12 +91,12 @@ const Header = ({defaultpos}:any) => {
                     textAlign: 'center'
                 }}>
                     <div style={headerElemContainerStyle}>
-                        <Link to='../pages/o-nas.tsx' style={{...headerElemStyle, textDecoration: 'none'}} className='button'>
+                        <Link to='/o-nas' style={{...headerElemStyle, textDecoration: 'none'}} className='button'>
                         <p >O nas</p>
                         </Link>
                     </div>
                     <div style={headerElemContainerStyle}>
-                        <Link to='../pages/kontakt.tsx' style={{...headerElemStyle, textDecoration: 'none'}} className='button'>
+                        <Link to='/kontakt' style={{...headerElemStyle, textDecoration: 'none'}} className='button'>
                         <p >Kontakt</p>
                         </Link>
                     </div>

@@ -162,8 +162,8 @@ const IndexPage = () => {
           justifyContent: "center",
           alignItems: "center",
         }}>
-        <PageLink destination="../pages/o-nas.tsx" text="O nas" icon={sunny} className="purpleButton"/>
-        <PageLink destination="../pages/kontakt.tsx" text="Kontakt" icon={mail} className="orangeButton"/>
+        <PageLink destination="/o-nas" text="O nas" icon={sunny} className="purpleButton"/>
+        <PageLink destination="/kontakt" text="Kontakt" icon={mail} className="orangeButton"/>
         </div>
       </body>
       <Footer/>
