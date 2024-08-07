@@ -3,9 +3,8 @@ import { HeadFC } from "gatsby"
 import phoneIcon from "../images/ico-phone-dark.svg"
 import lightbulbIcon from "../images/ico-lightbulb-dark.svg"
 import swash1 from "../images/swash-1.svg"
-import Header from "../components/header"
-import Footer from "../components/footer"
 import "../styles/global.css"
+import Layout from "../components/layout"
 
 const mainStyle: React.CSSProperties = {
 	backgroundColor: "white",
@@ -57,8 +56,7 @@ const iconStyle: React.CSSProperties = {
 
 const ONasPage = () => {
 	return (
-		<>
-			<Header></Header>
+		<Layout>
 			<main style={mainStyle}>
 				<div>
 					<h1 style={headerStyle}>
@@ -117,8 +115,7 @@ const ONasPage = () => {
 					</div>
 				</div>
 			</main >
-			<Footer></Footer>
-		</>
+		</Layout>
 	)
 }
 

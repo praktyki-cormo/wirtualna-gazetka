@@ -1,7 +1,6 @@
 import * as React from "react"
 import { HeadFC } from "gatsby"
-import Header from "../components/header"
-import Footer from "../components/footer"
+import Layout from "../components/layout"
 
 const mainStyle: React.CSSProperties = {
 	backgroundColor: "#fff",
@@ -62,8 +61,7 @@ const privacyPolicyStyle: React.CSSProperties = {
 }
 const KontaktPage = () => {
 	return (
-		<>
-			<Header></Header>
+		<Layout>
 			<main style={mainStyle}>
 				<form style={formStyle} method="post" action="#">
 					<h1 style={headerStyle}>Kontakt</h1>
@@ -104,8 +102,7 @@ const KontaktPage = () => {
 					</p>
 				</form>
 			</main >
-			<Footer></Footer>
-		</>
+		</Layout>
 	)
 }
 
