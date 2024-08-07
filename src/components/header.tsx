@@ -3,7 +3,17 @@ import {Link} from 'gatsby'
 import logo from '../images/wirtualnagazetka.svg'
 import "./header.css"
 
-const Header = ({defaultpos}:any) => {
+const Header = () => {
+    const handleNewspaperClick = () => {
+        //zamówienie
+    }
+    const handlePricingClick = () => {
+        //wycena
+    }
+    const handleLoginClick = () => {
+        //logowanie
+    }
+
     var headerStyle = {
         color: "white",
         backgroundColor: "#246036",
@@ -35,9 +45,8 @@ const Header = ({defaultpos}:any) => {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        backgroundColor: 'white',
-        color: 'black',
-        borderRadius: '40px 40px 40px 40px'
+        color: 'white',
+        fontWeight: 'bold'
     }
     var headerElemContainerStyle = {
         display: 'flex'
@@ -46,7 +55,7 @@ const Header = ({defaultpos}:any) => {
     const [y,
         setY] = React.useState(document.scrollingElement.scrollHeight);
       const [scrollDirection,
-        setScrollDirection] = React.useState(defaultpos);
+        setScrollDirection] = React.useState(true);
     
       const handleNavigation = React.useCallback(() => {
     
@@ -90,29 +99,34 @@ const Header = ({defaultpos}:any) => {
                     paddingRight: 20,
                     textAlign: 'center'
                 }}>
-                    <div style={headerElemContainerStyle}>
+                    <div style={{...headerElemContainerStyle, borderRight: '1px solid white'}}>
+                        <Link to='/' style={{...headerElemStyle, textDecoration: 'none'}} className='button'>
+                        <p >Strona główna</p>
+                        </Link>
+                    </div>
+                    <div style={{...headerElemContainerStyle, borderRight: '1px solid white', borderLeft: '1px solid white'}}>
                         <Link to='/o-nas' style={{...headerElemStyle, textDecoration: 'none'}} className='button'>
                         <p >O nas</p>
                         </Link>
                     </div>
-                    <div style={headerElemContainerStyle}>
+                    <div style={{...headerElemContainerStyle, borderRight: '1px solid white', borderLeft: '1px solid white'}}>
                         <Link to='/kontakt' style={{...headerElemStyle, textDecoration: 'none'}} className='button'>
                         <p >Kontakt</p>
                         </Link>
                     </div>
-                    <div>
-                        <p style={headerElemStyle} className='button'>
+                    <div style={{...headerElemContainerStyle, borderRight: '1px solid white', borderLeft: '1px solid white'}}>
+                        <p style={headerElemStyle} className='button' onClick={handleNewspaperClick}>
                             Zamów Wirtualną Gazetkę
                         </p>
                     </div>
-                    <div>
-                        <p style={headerElemStyle} className='button'>
+                    <div style={{...headerElemContainerStyle, borderRight: '1px solid white', borderLeft: '1px solid white'}}>
+                        <p style={headerElemStyle} className='button' onClick={handlePricingClick}>
                             Chcę Otrzymać Wycenę
                         </p>
                     </div>
-                    <div>
-                        <p style={headerElemStyle} className='button'>
-                            <b>Logowanie</b><br/>
+                    <div style={{...headerElemContainerStyle, borderLeft: '1px solid white'}}>
+                        <p style={headerElemStyle} className='button' onClick={handleLoginClick}>
+                            Logowanie<br/>
                             do panelu klienta
                         </p>
                     </div>
