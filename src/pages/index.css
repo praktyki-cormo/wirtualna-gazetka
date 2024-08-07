@@ -1,0 +1,14 @@
+.purpleButton{
+    background-color: #7137FF;
+    transition: background-color 0.25s ease-in-out;
+}
+.purpleButton:hover{
+    background-color: #936AFF;
+}
+.orangeButton{
+    background-color: #BB6710;
+    transition: background-color 0.25s ease-in-out;
+}
+.orangeButton:hover{
+    background-color: #EE8942;
+}

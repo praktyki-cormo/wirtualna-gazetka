@@ -2,6 +2,7 @@ import * as React from "react"
 import type { HeadFC } from "gatsby"
 import "../components/footer"
 import "../styles/global.css"
+import "./index.css"
 import fiszki from "../images/fiszki.png"
 import logo from "../images/wirtualnagazetka.svg"
 import Footer from "../components/footer"
@@ -11,6 +12,7 @@ import youtube from "../images/slide-play.svg"
 import education from "../images/education.svg"
 import PageLink from "../components/page-link"
 import sunny from "../images/sunny-white.svg"
+import mail from "../images/ico-mail.svg"
 
 const bgGreen = "#246036"
 
@@ -160,8 +162,8 @@ const IndexPage = () => {
           justifyContent: "center",
           alignItems: "center",
         }}>
-          
-          <PageLink text="O nas" icon={sunny} color="#7f1aeb" dimColor="#5d08c9"/>
+        <PageLink destination="../pages/o-nas.tsx" text="O nas" icon={sunny} className="purpleButton"/>
+        <PageLink destination="../pages/kontakt.tsx" text="Kontakt" icon={mail} className="orangeButton"/>
         </div>
       </body>
       <Footer/>
