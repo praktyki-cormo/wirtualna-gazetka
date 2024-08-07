@@ -48,21 +48,13 @@ const IndexPage = () => {
 			<div style={{
 					height: 1300,
 					backgroundColor: bgGreen,
-					zIndex: -99999
+					zIndex: -99999,
+					backgroundImage: 'url(' + fiszki + '), url(' + fiszki + ')',
+					backgroundPosition: 'right top, right top',
+					backgroundPositionX: '-200px, -300px',
+					backgroundSize: '110% auto, 130% auto',
+					backgroundRepeat: 'no-repeat, no-repeat'
 				}}>
-				<img src={fiszki} style={{
-					width: '100%',
-					height: 'auto',
-					position: "absolute",
-					zIndex: 2
-				}}/>
-				<img src={fiszki} style={{
-				width: '140%',
-					height: 'auto',
-					position: "absolute",
-					zIndex: 1,
-					left: -280,
-				}}/>
 
 					<div style={{
 					position: "relative",
