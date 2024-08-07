@@ -51,7 +51,7 @@ const IndexPage = () => {
 					zIndex: -99999,
 					backgroundImage: 'url(' + fiszki + '), url(' + fiszki + ')',
 					backgroundPosition: 'right top, right top',
-					backgroundPositionX: '-200px, -300px',
+					backgroundPositionX: '-0px, -200px',
 					backgroundSize: '110% auto, 130% auto',
 					backgroundRepeat: 'no-repeat, no-repeat'
 				}}>
