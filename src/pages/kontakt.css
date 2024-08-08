@@ -53,6 +53,7 @@ form{
 }
 
 textarea{
+	padding: 2px 5px;
 	font-size: 20px;
 	resize: none;
 	margin-bottom: 3vh;
