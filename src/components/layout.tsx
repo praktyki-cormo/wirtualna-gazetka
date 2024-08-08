@@ -1,12 +1,11 @@
-
 import * as React from "react"
-import Header from "../components/header"
 import Footer from "../components/footer"
-
+import Loadable from "@loadable/component"
+const LazyHeader = Loadable(() => import("../components/header"))
 const Layout = ({children}) => {
 	return (
 		<>
-			<Header></Header>
+			<LazyHeader></LazyHeader>
 			{children}
 			<Footer></Footer>
 		</>
