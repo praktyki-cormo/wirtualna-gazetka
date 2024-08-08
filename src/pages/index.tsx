@@ -103,7 +103,7 @@ const IndexPage = () => {
 					width: '100%',
 					height: 'auto',
 					fontSize: 24,
-					margin: 50,
+					margin: '50px 0px 50px 0px',
 					fontWeight: 'bold',
 					textAlign: 'center'
 				}}>
