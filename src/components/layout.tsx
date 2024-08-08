@@ -6,6 +6,7 @@ const Layout = ({children}) => {
 	return (
 		<>
 			<LazyHeader></LazyHeader>
+			<link rel="stylesheet" href="https://use.typekit.net/zqj5ebp.css"></link>
 			{children}
 			<Footer></Footer>
 		</>
