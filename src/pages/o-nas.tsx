@@ -4,72 +4,22 @@ import phoneIcon from "../images/ico-phone-dark.svg"
 import lightbulbIcon from "../images/ico-lightbulb-dark.svg"
 import swash1 from "../images/swash-1.svg"
 import "../styles/global.css"
+import "./o-nas.css"
 import Layout from "../components/layout"
 
-const mainStyle: React.CSSProperties = {
-	backgroundColor: "white",
-	color: "#FFF",
-	display: "flex",
-	flexDirection: "column",
-	justifyContent: "space-between"
-}
-const headerStyle: React.CSSProperties = {
-	textAlign: "center",
-	fontSize: "calc(24px + 1vw)",
-	color: "#314839",
-	margin: "6vh 0",
-}
-const sectionStyle: React.CSSProperties = {
-	display: "flex",
-	justifyContent: "space-between",
-	alignItems: "center",
-
-	marginBottom: "12vh"
-}
-const paragraphContainerStyle: React.CSSProperties = {
-	minHeight: "200px",
-	backgroundColor: "#1F6235",
-	fontSize: "calc(12px + 1vmin)",
-	fontWeight: "500",
-	display: "flex",
-	alignItems: "center",
-	justifyContent: "center",
-	boxShadow: "-2px 2px 10px 2px rgba(0, 0, 0, 0.25)"
-}
-const paragraphStyle: React.CSSProperties = {
-	textAlign: "center",
-	padding: "500px, 0",
-	width: "80%"
-}
-const iconContainerStyle: React.CSSProperties = {
-	display: "flex",
-	flexGrow: "1",
-	justifyContent: "center",
-	alignItems: "center",
-	boxSizing: "border-box",
-	height: "150px",
-	minWidth: "200px"
-}
-const iconStyle: React.CSSProperties = {
-	height: "100%"
-}
 
 const ONasPage = () => {
 	return (
 		<Layout>
-			<main style={mainStyle}>
+			<main>
 				<div>
-					<h1 style={headerStyle}>
+					<h1 className="page-title">
 						O nas
 					</h1>
 				</div>
-				<div id="section1" style={sectionStyle}>
-					<div style={{
-						...paragraphContainerStyle,
-						borderRadius: "0 80px 80px 0",
-						width: "75vw",
-					}}>
-						<p style={paragraphStyle}>
+				<div className="section section-left">
+					<div className="paragraph-container">
+						<p>
 							Jesteśmy zespołem, który doskonale rozumie jak bardzo potrzebne są nowoczesne
 							narzędzia w szkole. Dostarczamy innowacyjne rozwiązania technologiczne dla szkół
 							i przedszkoli, a nasze doświadczenie pozwala nam tworzyć i dostarczać systemy,
@@ -77,32 +27,25 @@ const ONasPage = () => {
 							angażują uczniów i wspierają ich rozwój.
 						</p>
 					</div>
-					<div style={iconContainerStyle}>
-						<img src={phoneIcon} style={iconStyle}></img>
+					<div className="icon-container">
+						<img src={phoneIcon} className="icon"></img>
 					</div>
 				</div>
-				<div id="section2" style={sectionStyle}>
-					<div style={iconContainerStyle}>
-						<img src={lightbulbIcon} style={iconStyle}></img>
+				<div className="section section-right">
+					<div className="icon-container">
+						<img src={lightbulbIcon} className="icon"></img>
 					</div>
-					<div style={{
-						...paragraphContainerStyle,
-						borderRadius: "80px 0 0 80px",
-						width: "75vw",
-					}}>
-						<p style={paragraphStyle}>
+					<div className="paragraph-container">
+						<p>
 							Tworząc najnowsze oprogramowanie Wirtualnej Gazetki oparliśmy się na 7
 							letnim doświadczeniu przy wdrażaniu podobnego oprogramowania w setkach
 							placówek oświatowych na terenie całej Polski.
 						</p>
 					</div>
 				</div>
-				<div id="section3" style={{
-					...sectionStyle,
-					marginBottom: "100px"
-				}}>
-					<div style={paragraphContainerStyle}>
-						<p style={paragraphStyle}>
+				<div className="section section-full">
+					<div className="paragraph-container">
+						<p>
 							Znamy oczekiwania i potrzeby szkół, dlatego stworzyliśmy nowy produkt, który z
 							powodzeniem sprawdzi się jako nowoczesny odpowiednik tablicy korkowej czy
 							zastąpi obecne rozwiązania komunikacyjne w Państwa szkole.
