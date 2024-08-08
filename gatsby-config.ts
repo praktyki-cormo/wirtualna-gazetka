@@ -11,5 +11,8 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [],
 }
+module.exports = {
+  pathPrefix: "/wirtualna-gazetka",
+}
 
 export default config
