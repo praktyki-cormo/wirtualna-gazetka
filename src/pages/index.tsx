@@ -47,8 +47,8 @@ const IndexPage = () => {
 			<main style={pageStyles}>
 			<div style={{
 					height: 1300,
+					width: '100%',
 					backgroundColor: bgGreen,
-					zIndex: -99999,
 					backgroundImage: 'url(' + fiszki + '), url(' + fiszki + ')',
 					backgroundPosition: 'right top, right top',
 					backgroundPositionX: '-0px, -200px',
@@ -94,7 +94,7 @@ const IndexPage = () => {
 					</div>
 				</div>
 			</div>
-			<body>
+			<body style={{width: '100%'}}>
 				<div style={{
 					fontSize: 21,
 					color: '#333',

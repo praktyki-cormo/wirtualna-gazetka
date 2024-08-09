@@ -99,35 +99,29 @@ const Header = () => {
                     paddingRight: 20,
                     textAlign: 'center'
                 }}>
-                    <div style={{...headerElemContainerStyle, borderRight: '1px solid white'}}>
-                        <Link to='/' style={{...headerElemStyle, textDecoration: 'none'}} className='button'>
-                        <p >Strona główna</p>
-                        </Link>
-                    </div>
-                    <div style={{...headerElemContainerStyle, borderRight: '1px solid white', borderLeft: '1px solid white'}}>
-                        <Link to='/o-nas' style={{...headerElemStyle, textDecoration: 'none'}} className='button'>
-                        <p >O nas</p>
-                        </Link>
-                    </div>
-                    <div style={{...headerElemContainerStyle, borderRight: '1px solid white', borderLeft: '1px solid white'}}>
+                    <div style={headerElemContainerStyle}>
                         <Link to='/kontakt' style={{...headerElemStyle, textDecoration: 'none'}} className='button'>
                         <p >Kontakt</p>
                         </Link>
                     </div>
-                    <div style={{...headerElemContainerStyle, borderRight: '1px solid white', borderLeft: '1px solid white'}}>
+                    <div style={headerElemContainerStyle}>
                         <p style={headerElemStyle} className='button' onClick={handleNewspaperClick}>
-                            Zamów Wirtualną Gazetkę
+                            Zamów
                         </p>
                     </div>
-                    <div style={{...headerElemContainerStyle, borderRight: '1px solid white', borderLeft: '1px solid white'}}>
+                    <div style={headerElemContainerStyle}>
                         <p style={headerElemStyle} className='button' onClick={handlePricingClick}>
-                            Chcę Otrzymać Wycenę
+                            Wycena
                         </p>
                     </div>
-                    <div style={{...headerElemContainerStyle, borderLeft: '1px solid white'}}>
-                        <p style={headerElemStyle} className='button' onClick={handleLoginClick}>
-                            Logowanie<br/>
-                            do panelu klienta
+                    <div style={headerElemContainerStyle}>
+                        <Link to='/o-nas' style={{...headerElemStyle, textDecoration: 'none'}} className='button'>
+                        <p >O nas</p>
+                        </Link>
+                    </div>
+                    <div style={headerElemContainerStyle}>
+                        <p style={headerElemStyle} className='panel' onClick={handleLoginClick}>
+                            Panel
                         </p>
                     </div>
                 </div>

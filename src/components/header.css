@@ -1,6 +1,17 @@
 .button{
+    background-color: #246036;
     transition: all 0.25s ease-in-out;
+    border-radius: 80px;
 }
 .button:hover{
-    color: black!important;
+    background-color: #14361e;
+}
+.panel{
+    color: #246036!important;
+    background-color: white;
+    transition: all 0.25s ease-in-out;
+    border-radius: 80px;
+}
+.panel:hover{
+    background-color: gray;
 }
