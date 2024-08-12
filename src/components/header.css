@@ -36,10 +36,6 @@
 .headerStyle{
     color: white;
     background-color: #246036;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: 'space-between';
     margin-top: 10px;
     margin-bottom: 0px;
@@ -56,6 +52,13 @@
     left: 0px;
     transition: top 0.25s ease-out;
     z-index: 40;
+}
+.menuContainer{
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+    text-align: center;
+    float: right
 }
 @media (prefers-reduced-motion){
     #header{

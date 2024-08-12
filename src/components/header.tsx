@@ -51,13 +51,7 @@ const Header = () => {
                 <img src={logo} style={{
                     height: 50,
                 }}/>
-                <div style={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    paddingRight: 20,
-                    textAlign: 'center'
-                }}>
-                    <div style={{flexShrink: 1}}/>
+                <div className='menuContainer'>
                     <div className='headerElemContainerStyle'>
                         <Link to='/kontakt' style={{textDecoration: 'none'}} className='button'>
                         <p >Kontakt</p>
