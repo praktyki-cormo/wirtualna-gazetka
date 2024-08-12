@@ -48,15 +48,16 @@ const Header = () => {
     return(
         <header className="headerPosition" id="header">
             <div className="headerStyle">
+                <img src={logo} style={{
+                    height: 50,
+                }}/>
                 <div style={{
                     display: 'flex',
+                    flexDirection: 'row',
                     paddingRight: 20,
                     textAlign: 'center'
                 }}>
-                    <img src={logo} style={{
-                        height: 50,
-                        flexGrow: 3
-                    }}/>
+                    <div style={{flexShrink: 1}}/>
                     <div className='headerElemContainerStyle'>
                         <Link to='/kontakt' style={{textDecoration: 'none'}} className='button'>
                         <p >Kontakt</p>

@@ -1,4 +1,16 @@
 
+.button, .panel{
+    margin: 10px;
+    max-width: 80px;
+    padding: 0px 20px 0px 20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    flex-shrink: 0;
+}
 .button{
     background-color: #246036;
     transition: all 0.25s ease-in-out;
@@ -26,6 +38,7 @@
     background-color: #246036;
     text-align: center;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: 'space-between';
     margin-top: 10px;
@@ -43,17 +56,6 @@
     left: 0px;
     transition: top 0.25s ease-out;
     z-index: 40;
-}
-.button, .panel{
-    margin: 10px;
-    max-width: 80px;
-    padding: 0px 20px 0px 20px;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
 }
 @media (prefers-reduced-motion){
     #header{
