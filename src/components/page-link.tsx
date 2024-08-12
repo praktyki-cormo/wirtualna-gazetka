@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import cursor from "../images/cursor-white.svg"
 import './page-link.css'
 
-const PageLink = ({text, icon, className, destination}) => {
+const PageLink = ({text, icon, className, destination}:any) => {
 
     return(
         <Link to={destination} className={'linkButton ' + className}>
