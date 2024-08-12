@@ -60,6 +60,8 @@ textarea{
 }
 
 button{
+	background-color: #fff;
+	border-radius: 0;
 	padding: 6px 18px;
 	margin-right: 1vw;
 	margin-bottom: 4vh;

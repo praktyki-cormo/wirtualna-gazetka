@@ -1,7 +1,11 @@
 import * as React from "react"
 import { HeadFC } from "gatsby"
 import Layout from "../components/layout"
+<<<<<<< Updated upstream
 import "./kontakt.css"
+=======
+
+>>>>>>> Stashed changes
 const KontaktPage = () => {
 	return (
 		<Layout>
